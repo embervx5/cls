@@ -1,3 +1,6 @@
+use std::io::{self, Write};
+
 fn main() {
-    println!("Hello, world!");
+    print!("x1B[2J\x1B[1;1H");
+    io::stdout().flush().unwrap();
 }
